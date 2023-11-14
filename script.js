@@ -33,7 +33,7 @@ function generatePassword() {
     }
     else {
       for (var i = 0; i < pLength; i++) { //this loop pulls and appends a random character as many times as is dictated by the pLength
-        pWord += strFinal.charAt(Math.floor(Math.random() * (strFinal.length + 1)))
+        pWord += strFinal.charAt(Math.floor(Math.random() * (strFinal.length)))
       } //Math.floor rounds the number down to ensure it's an integer
     }
     return pWord;
